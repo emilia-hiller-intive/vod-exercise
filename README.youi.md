@@ -29,7 +29,7 @@ You first need to install the JS dependencies:
 Now, run the following to build and run a YiRN application (in this case on OSX):
 
 	cd youi/
-	youi-tv build -p osx --local --file index.youi.js
+	youi-tv build -p osx --local --file index.youi.tsx
 	
 At this point you can run the application from commandline from (`youi/build/osx`) or open in your IDE. The application assets will include a bundled copy of the JS application.
 

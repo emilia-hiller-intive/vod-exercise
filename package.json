@@ -4,20 +4,35 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint . --ext .ts"
   },
   "dependencies": {
-    "@youi/react-native-youi": "6.0.0",
+    "@reduxjs/toolkit": "^1.4.0",
     "@youi/babel-plugin-react-native-youi": "1.0.4",
+    "@youi/react-native-youi": "6.0.0",
+    "axios": "^0.21.0",
     "react": "16.8.6",
-    "react-native": "0.60.6"
+    "react-native": "^0.63.3",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-saga": "^1.1.3"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/runtime": "^7.6.2",
-    "metro-react-native-babel-preset": "0.57.0",
+    "@types/react": "^16.9.56",
+    "@types/react-native": "^0.63.33",
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "jest": "^24.9.0",
-    "react-test-renderer": "16.8.6"
+    "metro-react-native-babel-preset": "0.57.0",
+    "prettier": "^2.1.2",
+    "react-test-renderer": "16.8.6",
+    "typescript": "^4.0.5"
   },
   "jest": {
     "preset": "@youi/react-native-youi",
