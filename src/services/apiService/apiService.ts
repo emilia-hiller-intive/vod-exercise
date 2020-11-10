@@ -8,7 +8,9 @@ const request = async <T, U = T>({
 }: RequestDataParamsType): Promise<FetchDataType<U>> => {
   let response;
 
-  const api = axios.create() as AxiosInstance;
+  const api = axios.create({
+    baseURL: "https://sample-movie-api.web.app/",
+  }) as AxiosInstance;
 
   try {
     response = await api(url);

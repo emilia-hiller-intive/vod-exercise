@@ -4,12 +4,16 @@
 import React from "react";
 import { AppRegistry, StyleSheet, View } from "react-native";
 import App from "./src/App";
+import { Provider } from "react-redux";
+import initStore from "./src/store";
 
 const YiReactApp = () => {
   return (
-    <View style={styles.mainContainer}>
-      <App />
-    </View>
+    <Provider store={initStore()}>
+      <View style={styles.mainContainer}>
+        <App />
+      </View>
+    </Provider>
   );
 };
 

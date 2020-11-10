@@ -1,6 +1,9 @@
 import { combineReducers } from "@reduxjs/toolkit";
+import movies from "./movies/moviesReducer";
 
-const rootReducer = combineReducers({});
+const rootReducer = combineReducers({
+  movies,
+});
 
 export type RootState = ReturnType<typeof rootReducer>;
 
