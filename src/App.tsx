@@ -1,8 +1,8 @@
 import React, { FC, useEffect } from "react";
-import { View, Text } from "react-native";
 import { useDispatch } from "react-redux";
 
 import actions from "./store/actions";
+import { RootStack } from "./navigation";
 
 const App: FC = () => {
   const dispatch = useDispatch();
@@ -11,11 +11,7 @@ const App: FC = () => {
     dispatch(actions.moviesSaga.getMovies());
   }, [dispatch]);
 
-  return (
-    <View>
-      <Text>APP</Text>
-    </View>
-  );
+  return <RootStack />;
 };
 
 export default App;

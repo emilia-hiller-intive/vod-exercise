@@ -7,3 +7,8 @@ export const URLS = {
   CATEGORIES: "categories",
   MOVIES: "movies?category=",
 };
+
+export const ROUTE_PATHS = {
+  LANDING: "Landing",
+  PLAYER: "Player",
+};
